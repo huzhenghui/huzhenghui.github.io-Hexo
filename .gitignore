@@ -1,5 +1,5 @@
 public/
-.deploy_*/
+.deploy_git/
 db.json
 
 # Logs
@@ -63,4 +63,3 @@ typings/
 
 # next.js build output
 .next
-
