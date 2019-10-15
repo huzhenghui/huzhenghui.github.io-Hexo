@@ -1,4 +1,5 @@
 public/
+.deploy_*/
 db.json
 
 # Logs
@@ -62,3 +63,4 @@ typings/
 
 # next.js build output
 .next
+
