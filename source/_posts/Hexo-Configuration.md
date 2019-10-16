@@ -1,7 +1,13 @@
+---
+title: Hexo-Configuration
+date: 2019-10-16 13:48:06
+tags:
+---
 # Hexo Configuration
-## Docs: https://hexo.io/docs/configuration.html
-## Source: https://github.com/hexojs/hexo/
 
+## Site
+
+```yaml
 # Site
 title: Hu Zhenghui's Blog
 subtitle: Blog Subtitle
@@ -10,14 +16,22 @@ keywords: Hexo
 author: hu@daonao.com
 language: zh-cn
 timezone: Asia/Shanghai
+```
 
+## URL
+
+```yaml
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: https://huzhenghui.github.io
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
+```
 
+## Directory
+
+```yaml
 # Directory
 source_dir: source
 public_dir: public
@@ -27,7 +41,11 @@ category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
+```
 
+## Writing
+
+```yaml
 # Writing
 new_post_name: :title.md # File name of new posts
 default_layout: post
@@ -42,8 +60,12 @@ highlight:
   enable: true
   line_number: true
   auto_detect: true
-  tab_replace: 4
-  
+  tab_replace: 2
+```
+
+## Home page setting
+
+```yaml
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
 # per_page: Posts displayed per page. (0 = disable pagination)
@@ -52,29 +74,51 @@ index_generator:
   path: ''
   per_page: 10
   order_by: -date
-  
+```
+
+## Category & Tag
+
+```yaml
 # Category & Tag
 default_category: uncategorized
 category_map:
 tag_map:
+```
 
+## Date / Time format
+
+```yaml
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date
 ## You can customize the date format as defined in
 ## http://momentjs.com/docs/#/displaying/format/
 date_format: YYYY-MM-DD
 time_format: HH:mm:ss
+```
 
+## Pagination
+
+```yaml
 # Pagination
 ## Set per_page to 0 to disable pagination
 per_page: 10
 pagination_dir: page
+```
 
+## Extensions
+
+### Extension - Themes
+
+```yaml
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: landscape
+```
 
+### Extension - Deployment
+
+```yaml
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
@@ -82,6 +126,11 @@ deploy:
   repository: git@github.com:huzhenghui/huzhenghui.github.io.git
   branch: master
   ignore_hidden: false
+```
 
+## Include/Exclude Files or Folders
+
+```yaml
 include:
   - ".nojekyll"
+```
