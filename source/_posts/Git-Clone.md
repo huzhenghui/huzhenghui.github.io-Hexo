@@ -22,5 +22,5 @@ npm install
 ```
 ## 本地测试
 ```bash
-hexo server --open
+hexo server --open --debug
 ```

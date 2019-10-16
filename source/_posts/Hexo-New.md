@@ -6,5 +6,5 @@ tags:
 # Hexo New
 ## 新建
 ```bash
-hexo new "Title"
+hexo new "Title" --debug
 ```

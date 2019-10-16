@@ -1,6 +1,6 @@
 ---
 title: Hexo-Configuration
-date: 2019-10-16 13:48:06
+date: 2019-10-16 15:42:25
 tags:
 ---
 # Hexo Configuration
@@ -45,6 +45,8 @@ skip_render:
 
 ## Writing
 
+`auto_detect`需要设置为`false`，如果设置为`true`，可能遇到`TypeError: Cannot set property 'lastIndex' of undefined`报错
+
 ```yaml
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -59,7 +61,7 @@ future: true
 highlight:
   enable: true
   line_number: true
-  auto_detect: true
+  auto_detect: false
   tab_replace: 2
 ```
 

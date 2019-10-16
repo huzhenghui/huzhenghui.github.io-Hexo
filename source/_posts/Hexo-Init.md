@@ -17,7 +17,7 @@ cd huzhenghui.github.io-Hexo
 ## 本地测试
 
 ```bash
-hexo server
+hexo server --open --debug
 ```
 
 ## 初始化代码仓库
