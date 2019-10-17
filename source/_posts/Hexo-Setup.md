@@ -1,35 +1,44 @@
 ---
 title: Hexo Setup
-date: 2019-10-16 12:45:26
+comments: true
 tags:
+  - Hexo
+categories:
+  - - Hexo
+    - Learn
+keywords:
+  - hexo
+date: 2019-10-16 12:45:26
+updated: 2019-10-17 12:43:55
 ---
+
 # Hexo Setup
 
 ## 进入项目父目录
 
-```bash
+```bash 进入项目父目录
 cd ~/OneDrive/Hexo
 ```
 
 ## 初始化项目
 
-```bash
+```bash 初始化项目
 hexo init Init --no-install
 ```
 
 ## 进入项目文件夹
 
-```bash
+```bash 进入项目文件夹
 cd Init
 ```
 
 ## 查看初始化文件
 
-```bash
+```bash 查看初始化文件
 find . -path './themes/*/*' -prune -o -print | tree --fromfile . --noreport -F --sort=name -n | pbcopy
 ```
 
-```
+```plain 初始化文件
 .
 └── ./
     ├── _config.yml
@@ -47,17 +56,17 @@ find . -path './themes/*/*' -prune -o -print | tree --fromfile . --noreport -F -
 
 ## 安装依赖包
 
-```bash
+```bash 安装依赖包
 npm install
 ```
 
 ## _config.yml
 
-```bash
+```bash _config.yml
 cat _config.yml | pbcopy
 ```
 
-```yml
+```yaml _config.yml
 # Hexo Configuration
 ## Docs: https://hexo.io/docs/configuration.html
 ## Source: https://github.com/hexojs/hexo/
@@ -154,11 +163,11 @@ deploy:
 
 ## package.json
 
-```bash
+```bash package.json
 cat package.json | pbcopy
 ```
 
-```json
+```json package.json
 {
   "name": "hexo-site",
   "version": "0.0.0",
@@ -190,11 +199,11 @@ cat package.json | pbcopy
 
 ### scaffolds/draft.md
 
-```bash
+```bash scaffolds/draft.md
 cat scaffolds/draft.md | pbcopy
 ```
 
-```markdown
+```markdown scaffolds/draft.md
 ---
 title: {{ title }}
 tags:
@@ -203,11 +212,11 @@ tags:
 
 ### scaffolds/page.md
 
-```bash
+```bash scaffolds/page.md
 cat scaffolds/page.md | pbcopy
 ```
 
-```markdown
+```markdown scaffolds/page.md
 ---
 title: {{ title }}
 date: {{ date }}
@@ -216,11 +225,11 @@ date: {{ date }}
 
 ### scaffolds/post.md
 
-```bash
+```bash scaffolds/post.md
 cat scaffolds/post.md | pbcopy
 ```
 
-```markdown
+```markdown scaffolds/post.md
 ---
 title: {{ title }}
 date: {{ date }}

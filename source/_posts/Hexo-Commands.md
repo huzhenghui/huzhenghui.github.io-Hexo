@@ -1,110 +1,128 @@
 ---
 title: Hexo Commands
-date: 2019-10-16 15:09:01
+comments: true
 tags:
+  - hexo
+categories:
+  - - Hexo
+    - Learn
+keywords:
+  - hexo
+date: 2019-10-16 15:09:01
+updated: 2019-10-17 12:22:22
 ---
 
 # Hexo Commands
 
 ## init
 
-```bash
+```bash hexo init syntax
 hexo init [folder]
 ```
 
-```bash
+```bash hexo init
 hexo init
 ```
 
-```bash
+```bash hexo init no install
 hexo init [folder] --no-install
 ```
 
 ## new
 
-```bash
+```bash hexo new syntax
 hexo new [layout] <title>
 ```
 
-```bash
+```bash hexo new
 hexo new "Title"
 ```
 
-```bash
+```bash hexo new debug
 hexo new "Title" --debug
 ```
 
 ## generate
 
-```bash
+```bash hexo generate
 hexo generate
 ```
 
-```bash
+```bash hexo generate and deploy
 hexo generate --deploy
 ```
 
-```bash
+```bash hexo generate and deploy with debug
 hexo generate --deploy --debug
 ```
 
 ## server
 
-```bash
+```bash hexo server
 hexo server
 ```
 
-```bash
+```bash hexo server and open
 hexo server --open
 ```
 
-```bash
+```bash hexo server and open with debug
 hexo server --open --debug
 ```
 
 ## deploy
 
-```bash
+```bash hexo deploy
 hexo deploy
 ```
 
-```bash
+```bash hexo deploy and generate
 hexo deploy --generate
 ```
 
-```bash
+```bash hexo deploy generate with debug
 hexo deploy --generate --debug
 ```
 
 ## clean
 
-```bash
+```bash hexo clean
 hexo clean
 ```
 
-```bash
+```bash hexo clean with debug
 hexo clean --debug
 ```
 
 ## list
 
-```bash
-hexo list
+```bash hexo list syntax
+hexo list <type>
 ```
 
-```bash
-hexo list page
+```bash hexo list page with debug
+hexo list page --debug
 ```
 
-```bash
+```bash hexo list page
+hexo list page | pbcopy
+```
+
+```plain hexo list page sample
+INFO  Start processing
+Date        Title  Path
+2019-10-16         downloads/code/package.json
+```
+
+```bash hexo list post with debug
 hexo list post --debug
 ```
 
-```bash
+```bash hexo list post
 hexo list post | pbcopy
 ```
 
-```
+```plain hexo list post sample
 INFO  Start processing
 Date        Title               Path                          Category  Tags
 2019-10-15  Hexo Deploy         _posts/Hexo-Deploy.md
@@ -117,15 +135,15 @@ Date        Title               Path                          Category  Tags
 2019-10-16  Hexo Commands       _posts/Hexo-Commands.md
 ```
 
-```bash
+```bash hexo list route with debug
 hexo list route --debug
 ```
 
-```bash
+```bash hexo list route
 hexo list route | pbcopy
 ```
 
-```
+```plain hexo list route sample
 INFO  Start processing
 Total: 36
 ├─┬ 2019
@@ -187,25 +205,54 @@ Total: 36
   └── script.js
 ```
 
-```bash
-hexo list tag
+```bash hexo list tag with debug
+hexo list tag --debug
 ```
 
-```bash
-hexo list category
+```bash hexo list tag
+hexo list tag | pbcopy
+```
+
+```plain hexo list tag sample
+INFO  Start processing
+Name                  Posts  Path
+Front matter              1  tags/Front-matter/
+Hexo                      1  tags/Hexo/
+hexo                      2  tags/hexo/
+huzhenghui.github.io      1  tags/huzhenghui-github-io/
+no-tag                    1  tags/no-tag/
+```
+
+```bash hexo list category with debug
+hexo list category --debug
+```
+
+```bash hexo list category
+hexo list category | pbcopy
+```
+
+```bash hexo list category sample
+INFO  Start processing
+Name                  Posts
+Hexo                      2
+Learn                     1
+child-category            1
+huzhenghui.github.io      1
+operation                 1
+parent-category           1
 ```
 
 ## version
 
-```bash
+```bash hexo version with debug
 hexo version --debug
 ```
 
-```bash
+```bash hexo version
 hexo version | pbcopy
 ```
 
-```
+```plain hexo version sample
 hexo: 3.9.0
 hexo-cli: 3.0.0
 os: Darwin 19.0.0 darwin x64

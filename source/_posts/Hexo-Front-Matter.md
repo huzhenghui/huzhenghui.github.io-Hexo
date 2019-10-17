@@ -1,13 +1,14 @@
 ---
-title: Hexo-Front-Matter
+title: Hexo Front Matter
 date: 2019-10-16 16:17:03
-updated: 2019-10-16 16:19:21
+updated: 2019-10-17 12:33:20
 comments: true
 tags:
   - Hexo
   - Front matter
 categories:
-  - [Hexo]
+  - - Hexo
+    - Learn
 keywords:
   - Hexo
   - Front matter
